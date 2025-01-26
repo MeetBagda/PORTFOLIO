@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -196,30 +197,46 @@ export default function Page() {
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
-              </p>
-            </div>
-          </BlurFade>
+  <div className="grid items-center justify-center gap-8 px-4 text-center md:px-6 w-full py-12">
+    <BlurFade delay={BLUR_FADE_DELAY * 16}>
+      <div className="space-y-6">
+        <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+          Contact
         </div>
-      </section>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+          Let's Connect
+        </h2>
+        <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            I'm always open to new opportunities and collaborations. Feel free to reach out through any of the methods below.
+        </p>
+      </div>
+    </BlurFade>
+    
+    <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center">
+        {/* Email Contact */}
+        <BlurFade delay={BLUR_FADE_DELAY * 17}>
+        <Link
+        href={`mailto:${DATA.contact.email}`}
+        className="flex items-center gap-2 rounded-md border border-primary/20 px-4 py-2 transition-colors hover:bg-primary/5 focus:bg-primary/10"
+        >
+            <Icons.email className="h-5 w-5 text-primary"/>
+          <span className="font-medium text-foreground">Email Me</span>
+        </Link>
+      </BlurFade>
+        {/* Phone Contact */}
+        {/* <BlurFade delay={BLUR_FADE_DELAY * 18}>
+           <Link
+              href={`tel:${DATA.contact.tel}`}
+              className="flex items-center gap-2 rounded-md border border-primary/20 px-4 py-2 transition-colors hover:bg-primary/5 focus:bg-primary/10"
+            >
+              <Icons.whatsapp className="h-5 w-5 text-primary"/>
+                <span className="font-medium text-foreground">Call Me</span>
+            </Link>
+        </BlurFade> */}
+        
+    </div>
+  </div>
+</section>
     </main>
   );
 }
