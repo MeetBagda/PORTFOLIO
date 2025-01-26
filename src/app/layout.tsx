@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import { DownloadIcon } from "@radix-ui/react-icons";
+import DownloadButton from "@/components/DownloadButton";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -67,6 +69,7 @@ export default function RootLayout({
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
+        <DownloadButton href="/Resume_Meet_Bagda_WEBDEV_Updated.pdf" />
       </body>
     </html>
   );
