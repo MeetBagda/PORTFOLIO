@@ -150,7 +150,7 @@ export const DATA = {
       school: "National School - Lodhika, Rajkot",
         href: "#", //No URL
       degree: "Secondary School",
-        logoUrl: "/national.png", // Add school logo
+        logoUrl: "#", // Add school logo
       start: "2012",
       end: "2019",
     },
