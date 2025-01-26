@@ -241,7 +241,7 @@ export const DATA = {
             icon: <Icons.github className="size-3" />,
           }
         ],
-      image: "", // Replace with your project images
+      image: "/CoffeeShopFront.jpeg", // Replace with your project images
         // video: "" // Replace with the video URL
         // you can remove video link if you don't have a demo video
     },
