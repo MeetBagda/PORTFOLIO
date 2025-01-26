@@ -84,7 +84,7 @@ export const DATA = {
   work: [
     {
         company: "NUllClass",
-      //  href: "", //No Website
+        href: "https://www.nullclass.com/",
         badges: [],
         location: "Bangalore, India",
         title: "Internship",
@@ -92,7 +92,7 @@ export const DATA = {
         start: "Jan 2025",
         end: "Present", // Use end date if any
         description:
-          "Developed an online shop for farmers with team NAAVI, gaining insights into agricultural challenges and networking with industry professionals.",
+          "Working as a full-stack developer intern at NullClass, contributing to the development of web applications using the MERN stack. Collaborating with team members to deliver high-quality software solutions.",
       },
     // {
     //   company: "CodeRelay-24 Programming Club - Darshan University",
@@ -174,10 +174,15 @@ export const DATA = {
         {
           type: "Website",
           href: "https://email-generator-puce.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.globe className="size-3" />
         },
+          {
+            type: "Source",
+            href: "https://github.com/MeetBagda/AI-Powered-Email-Generator",
+            icon: <Icons.github className="size-3" />,
+          }
       ],
-      image: "", // Replace with your project images
+      image: "/EmailGenFront.png", // Replace with your project images
         // video: "" // Replace with the video URL
         // you can remove video link if you don't have a demo video
     },
@@ -200,14 +205,19 @@ export const DATA = {
             href: "https://paytm-ashy.vercel.app/",
             icon: <Icons.globe className="size-3" />,
           },
+          {
+            type: "Source",
+            href: "https://github.com/MeetBagda/Paytm",
+            icon: <Icons.github className="size-3" />,
+          }
         ],
-        image: "", // Replace with your project images
+        image: "/PayTM.png", // Replace with your project images
             // video: "" // Replace with the video URL
             // you can remove video link if you don't have a demo video
       },
     {
       title: "Coffee Shop - DotNet Semeste 5",
-        //href: "",
+        href: "#",
       dates: "2023",
       active: true,
       description:
@@ -224,42 +234,48 @@ export const DATA = {
       //    href: "",
       //     icon: <Icons.globe className="size-3" />,
       //    }
+      
+          {
+            type: "Source",
+            href: "https://github.com/MeetBagda/Coffee-Shop",
+            icon: <Icons.github className="size-3" />,
+          }
         ],
       image: "", // Replace with your project images
         // video: "" // Replace with the video URL
         // you can remove video link if you don't have a demo video
     },
-       {
-           title: "Modern Animated Website for Ray-Ban - Semester 4",
-            //href: "",
-           dates: "2023",
-           active: true,
-           description:
-             "Created a visually engaging and interactive website for Ray-Ban featuring modern animations and responsive design.",
-         technologies: [
-           "HTML",
-             "CSS",
-             "JavaScript",
-         ],
-           links: [
-                // You can add demo link if you have one
-      //    {
-      //     type: "Website",
-      //    href: "",
-      //     icon: <Icons.globe className="size-3" />,
-      //    }
-             ],
-         image: "", // Replace with your project images
-             // video: "" // Replace with the video URL
-            // you can remove video link if you don't have a demo video
-      },
+      //  {
+      //      title: "Modern Animated Website for Ray-Ban - Semester 4",
+      //       //href: "",
+      //      dates: "2023",
+      //      active: true,
+      //      description:
+      //        "Created a visually engaging and interactive website for Ray-Ban featuring modern animations and responsive design.",
+      //    technologies: [
+      //      "HTML",
+      //        "CSS",
+      //        "JavaScript",
+      //    ],
+      //      links: [
+      //           // You can add demo link if you have one
+      // //    {
+      // //     type: "Website",
+      // //    href: "",
+      // //     icon: <Icons.globe className="size-3" />,
+      // //    }
+      //        ],
+      //    image: "", // Replace with your project images
+      //        // video: "" // Replace with the video URL
+      //       // you can remove video link if you don't have a demo video
+      // },
       {
         title: "Employee Management System (MEAN Stack) - Semester 4",
-        //href: "",
+        href: "#",
         dates: "2023",
         active: true,
         description:
-          "Designed and built an Employee Management System leveraging the MEAN stack (MongoDB, Express.js, Angular, Node.js). Enabled functionalities for employee records management, including addition, modification, and deletion of employee profiles. Incorporated role-based access control and an intuitive Angular frontend for enhanced user experience and efficiency.",
+          "Designed and built an Employee Management System leveraging the MEAN stack (MongoDB, Express.js, Angular, Node.js). Enabled functionalities for employee records management, including addition, modification, and deletion of employee profiles.",
         technologies: [
            "MongoDB",
             "Express.js",
